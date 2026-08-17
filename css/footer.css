@@ -5,6 +5,7 @@
 .site-footer {
   background-color: #120701;
   padding-top: 0;
+  width: 100%;
 }
 
 .footer-top-divider {
@@ -14,23 +15,35 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
-  gap: 40px;
-  padding: 64px 0 48px;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(1.5rem, 3vw, 3rem);
 }
 
 /* Footer brand column */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand .logo {
+  display: inline-flex;
+}
+
 .footer-brand p {
   font-size: 0.88rem;
   color: var(--text-footer-link);
   line-height: 1.65;
-  margin-top: 16px;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  max-width: 320px;
 }
 
 .social-icons {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 
 .social-icon {
@@ -42,6 +55,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.25s ease, transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 .social-icon:hover {
@@ -56,25 +70,35 @@
 }
 
 /* Footer link columns */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
 .footer-column h4 {
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--text-footer-heading);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .footer-column ul {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
+  width: 100%;
 }
 
 .footer-column a {
   font-size: 0.88rem;
   color: var(--text-footer-link);
+  display: inline-block;
+  transition: color 0.2s ease;
 }
 
 .footer-column a:hover {
@@ -86,10 +110,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 1.5rem 0;
   border-top: 1px solid var(--divider);
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 1rem;
 }
 
 .footer-bottom p {
@@ -99,7 +123,8 @@
 
 .footer-legal {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .footer-legal a {
@@ -110,3 +135,4 @@
 .footer-legal a:hover {
   color: var(--orange-primary);
 }
+

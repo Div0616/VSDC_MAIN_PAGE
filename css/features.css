@@ -9,14 +9,17 @@
 /* Feature Cards Grid */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: var(--grid-gap);
 }
 
 .feature-card {
   background: radial-gradient(circle at center, var(--card-maroon-center) 0%, var(--card-maroon-edge) 100%);
   border-radius: var(--radius-card);
-  padding: 28px;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -33,7 +36,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
+  flex-shrink: 0;
 }
 
 .feature-icon svg {
@@ -49,11 +53,13 @@
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--text-white);
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .feature-card p {
   font-size: 0.88rem;
   color: var(--text-body-muted);
   line-height: 1.65;
+  flex: 1;
 }
+

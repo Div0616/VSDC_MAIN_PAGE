@@ -3,13 +3,13 @@
    ======================================== */
 
 .hero {
-  padding: 80px 0 100px;
+  padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(3rem, 7vw, 6.25rem);
 }
 
 .hero .container {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: clamp(2rem, 4vw, 3rem);
 }
 
 .hero-content {
@@ -23,20 +23,20 @@
   color: var(--text-white);
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: clamp(0.7rem, 1.5vw, 0.75rem);
   letter-spacing: 0.03em;
   padding: 6px 16px;
   border-radius: var(--radius-pill);
-  margin-bottom: 24px;
+  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .hero h1 {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 3.2rem;
+  font-size: clamp(1.85rem, 4.5vw, 3.2rem);
   line-height: 1.15;
   color: var(--text-white);
-  margin-bottom: 20px;
+  margin-bottom: clamp(1rem, 2vw, 1.25rem);
   letter-spacing: -0.02em;
 }
 
@@ -45,17 +45,17 @@
 }
 
 .hero-text {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
   color: var(--text-body);
   line-height: 1.7;
   max-width: 500px;
-  margin-bottom: 32px;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
 }
 
 .hero-buttons {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -64,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 0;
 }
 
 .hero-illustration img {
@@ -74,3 +75,4 @@
   -webkit-mask-image: radial-gradient(ellipse 85% 80% at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
   mask-image: radial-gradient(ellipse 85% 80% at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
 }
+

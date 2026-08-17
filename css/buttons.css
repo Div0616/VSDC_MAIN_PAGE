@@ -8,11 +8,13 @@
   justify-content: center;
   font-family: var(--font-heading);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: clamp(0.875rem, 1.8vw, 0.95rem);
   border-radius: var(--radius-pill);
-  padding: 12px 28px;
+  padding: 12px clamp(20px, 4vw, 28px);
   cursor: pointer;
   border: none;
+  max-width: 100%;
+  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
 
@@ -44,6 +46,7 @@
 .btn-cta {
   background: linear-gradient(90deg, #f97216 0%, #d57c40 60%, #c2703a 100%);
   color: var(--text-white);
-  font-size: 1rem;
-  padding: 14px 36px;
+  font-size: clamp(0.92rem, 2vw, 1rem);
+  padding: 14px clamp(24px, 5vw, 36px);
 }
+

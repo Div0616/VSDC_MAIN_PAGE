@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -46,7 +48,8 @@ img {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
 
 .section-divider {
@@ -58,21 +61,23 @@ img {
 /* --- Shared Section Header --- */
 .section-header {
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
 }
 
 .section-header h2 {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
   color: var(--orange-primary);
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
+  line-height: 1.25;
 }
 
 .section-header p {
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
   color: var(--text-body-muted);
   max-width: 520px;
   margin: 0 auto;
   line-height: 1.7;
 }
+

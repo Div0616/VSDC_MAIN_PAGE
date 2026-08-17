@@ -17,7 +17,6 @@
   --bg-course-card: #000000;
   --bg-course-card-border: #0b1a1f;
 
-
   /* Brand Orange */
   --orange-primary: #f97216;
   --orange-muted: #d67c3e;
@@ -44,9 +43,10 @@
   /* Divider */
   --divider: #190b00;
 
-  /* Spacing */
-  --section-padding: 100px;
-  --grid-gap: 28px;
+  /* Responsive Fluid Spacing */
+  --section-padding: clamp(3.25rem, 6.5vw, 6.25rem);
+  --container-padding: clamp(1rem, 3.5vw, 1.5rem);
+  --grid-gap: clamp(1.25rem, 2.5vw, 1.75rem);
 
   /* Radius */
   --radius-card: 16px;
