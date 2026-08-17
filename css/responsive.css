@@ -1,0 +1,180 @@
+/* ========================================
+   VighnoLearn — Responsive Breakpoints
+   ======================================== */
+
+/* ---- LARGE TABLET (≤ 1024px) ---- */
+@media (max-width: 1024px) {
+  /* Team: 3 columns */
+  .team-card {
+    width: calc(33.333% - var(--grid-gap));
+  }
+}
+
+/* ---- TABLET (≤ 768px) ---- */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 72px;
+  }
+
+  /* Nav */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-nav);
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    border-bottom: 1px solid var(--divider);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-illustration img {
+    max-width: 360px;
+  }
+
+  /* Grids */
+  .features-grid,
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Team: 2 columns */
+  .team-card {
+    width: calc(50% - var(--grid-gap));
+    max-width: 300px;
+  }
+
+  /* Contact */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  /* CTA */
+  .closing-cta h2 {
+    font-size: 1.9rem;
+  }
+
+  /* Auth */
+  .auth-card {
+    padding: 32px 24px;
+  }
+
+  .social-login {
+    flex-direction: column;
+  }
+}
+
+/* ---- MOBILE (≤ 480px) ---- */
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 56px;
+  }
+
+  .hero {
+    padding: 48px 0 64px;
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* Single column grids */
+  .features-grid,
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Team: 1 column */
+  .team-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Courses header stacked */
+  .courses-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Contact form row */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .closing-cta h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Auth */
+  .auth-card {
+    padding: 28px 20px;
+  }
+
+  .auth-card h1 {
+    font-size: 1.5rem;
+  }
+}

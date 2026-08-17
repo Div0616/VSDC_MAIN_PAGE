@@ -1,0 +1,117 @@
+/* ========================================
+   VighnoLearn — Our Visionaries Section
+   ======================================== */
+
+.visionaries-section {
+  padding: var(--section-padding) 0;
+}
+
+.visionaries-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.visionary-card {
+  position: relative;
+  width: 340px;
+  height: 440px;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.visionary-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(249, 114, 22, 0.2), 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.visionary-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.visionary-card:hover .visionary-img {
+  transform: scale(1.05);
+}
+
+/* Glassmorphism name overlay at the bottom */
+.visionary-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 20px 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+  transition: padding-bottom 0.3s ease;
+}
+
+.visionary-card:hover .visionary-overlay {
+  padding-bottom: 28px;
+}
+
+.visionary-overlay h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-white);
+  margin-bottom: 4px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.visionary-overlay .visionary-role {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--orange-primary);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtle orange border glow on hover */
+.visionary-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-card);
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  pointer-events: none;
+}
+
+.visionary-card:hover::after {
+  border-color: var(--orange-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .visionaries-grid {
+    gap: 28px;
+  }
+
+  .visionary-card {
+    width: 280px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visionary-card {
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+  }
+}

@@ -1,0 +1,76 @@
+/* ========================================
+   VighnoLearn — Hero Section
+   ======================================== */
+
+.hero {
+  padding: 80px 0 100px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 560px;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: var(--orange-primary);
+  color: var(--text-white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 1.15;
+  color: var(--text-white);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.hero h1 .orange {
+  color: var(--orange-primary);
+}
+
+.hero-text {
+  font-size: 1rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  max-width: 500px;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-illustration img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  -webkit-mask-image: radial-gradient(ellipse 85% 80% at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+  mask-image: radial-gradient(ellipse 85% 80% at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+}

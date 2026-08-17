@@ -1,0 +1,59 @@
+/* ========================================
+   VighnoLearn — Features (Who Should Join)
+   ======================================== */
+
+.who-should-join {
+  padding: var(--section-padding) 0;
+}
+
+/* Feature Cards Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+}
+
+.feature-card {
+  background: radial-gradient(circle at center, var(--card-maroon-center) 0%, var(--card-maroon-edge) 100%);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(92, 21, 24, 0.35);
+}
+
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--icon-chip-bg), var(--icon-chip-bg-alt));
+  border-radius: var(--radius-chip);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.feature-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--text-white);
+  stroke-width: 1.8;
+  fill: none;
+}
+
+.feature-card h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-white);
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.88rem;
+  color: var(--text-body-muted);
+  line-height: 1.65;
+}

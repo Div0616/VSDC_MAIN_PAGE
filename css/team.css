@@ -1,0 +1,121 @@
+/* ========================================
+   VighnoLearn — Team Section
+   ======================================== */
+
+.team-section {
+  padding: var(--section-padding) 0;
+}
+
+/* Team Cards Grid — 7 cards: 4 top row, 3 bottom row centered */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--grid-gap);
+}
+
+.team-card {
+  background-color: var(--bg-course-card);
+  border: 1px solid var(--bg-course-card-border);
+  border-radius: var(--radius-card);
+  padding: 28px 24px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(25% - var(--grid-gap));
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.team-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  margin: 0 auto 18px;
+  border: 3px solid var(--orange-primary);
+  background-color: #1a1014;
+  display: block;
+}
+
+/* Placeholder avatar when no image is provided */
+.team-avatar-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  border: 3px solid var(--orange-primary);
+  background: linear-gradient(135deg, var(--icon-chip-bg), var(--icon-chip-bg-alt));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-avatar-placeholder svg {
+  width: 40px;
+  height: 40px;
+  stroke: var(--text-body-muted);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.team-card h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-white);
+  margin-bottom: 4px;
+}
+
+.team-card .team-role {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--orange-primary);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.team-card p {
+  font-size: 0.85rem;
+  color: var(--text-body-muted);
+  line-height: 1.6;
+}
+
+/* Social links row inside team card */
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+.team-socials a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--social-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.team-socials a:hover {
+  background-color: var(--orange-primary);
+  transform: translateY(-2px);
+}
+
+.team-socials svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--text-white);
+}

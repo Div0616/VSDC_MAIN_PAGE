@@ -1,0 +1,60 @@
+/* ========================================
+   VighnoLearn — CSS Custom Properties
+   ======================================== */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* Backgrounds */
+  --bg-nav: #0f131c;
+  --bg-hero-base: #0e0701;
+  --bg-hero-glow-start: #201003;
+  --bg-hero-glow-end: #2a1505;
+  --bg-page-start: #120701;
+  --bg-page-end: #1b0d02;
+  --bg-pure-black: #000000;
+  --bg-course-card: #000000;
+  --bg-course-card-border: #0b1a1f;
+
+
+  /* Brand Orange */
+  --orange-primary: #f97216;
+  --orange-muted: #d67c3e;
+  --orange-light: #fff1c6;
+
+  /* Feature Card Maroon */
+  --card-maroon-center: #5c1518;
+  --card-maroon-edge: #2a0d0c;
+
+  /* Icon Chip */
+  --icon-chip-bg: #241419;
+  --icon-chip-bg-alt: #2a1b20;
+
+  /* Text Colors */
+  --text-white: #ffffff;
+  --text-body: #e5e0da;
+  --text-body-muted: #c9c4bd;
+  --text-footer-heading: #ffffff;
+  --text-footer-link: #9d9592;
+
+  /* Social Icon */
+  --social-bg: #1e293b;
+
+  /* Divider */
+  --divider: #190b00;
+
+  /* Spacing */
+  --section-padding: 100px;
+  --grid-gap: 28px;
+
+  /* Radius */
+  --radius-card: 16px;
+  --radius-course-card: 12px;
+  --radius-chip: 8px;
+  --radius-pill: 9999px;
+
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}

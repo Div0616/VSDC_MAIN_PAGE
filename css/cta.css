@@ -1,0 +1,27 @@
+/* ========================================
+   VighnoLearn — Closing CTA Section
+   ======================================== */
+
+.closing-cta {
+  padding: var(--section-padding) 0 120px;
+  text-align: center;
+}
+
+.closing-cta h2 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: var(--text-white);
+  margin-bottom: 16px;
+}
+
+.closing-cta h2 em {
+  font-style: italic;
+  color: var(--orange-primary);
+}
+
+.closing-cta p {
+  font-size: 1.05rem;
+  color: var(--text-body-muted);
+  margin-bottom: 36px;
+}

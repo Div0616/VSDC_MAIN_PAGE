@@ -1,0 +1,130 @@
+/* ========================================
+   VighnoLearn — Popular Courses Section
+   ======================================== */
+
+.popular-courses {
+  padding: var(--section-padding) 0;
+}
+
+.courses-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.courses-header-text h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--orange-primary);
+  margin-bottom: 8px;
+}
+
+.courses-header-text p {
+  font-size: 1rem;
+  color: var(--text-body-muted);
+}
+
+/* Course Cards Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+}
+
+.course-card {
+  background-color: var(--bg-course-card);
+  border: 1px solid var(--bg-course-card-border);
+  border-radius: var(--radius-course-card);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.course-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.course-body {
+  padding: 18px 20px;
+}
+
+.course-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.course-title-row h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-white);
+  flex: 1;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-white);
+  white-space: nowrap;
+}
+
+.course-rating .star {
+  color: #f49e0b;
+  font-size: 0.9rem;
+}
+
+.course-description {
+  font-size: 0.83rem;
+  color: var(--text-body-muted);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.course-divider {
+  height: 1px;
+  background-color: var(--divider);
+  margin-bottom: 14px;
+}
+
+.course-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.course-price {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--orange-primary);
+}
+
+.course-enroll {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--orange-primary);
+  transition: opacity 0.2s ease;
+}
+
+.course-enroll:hover {
+  opacity: 0.8;
+}

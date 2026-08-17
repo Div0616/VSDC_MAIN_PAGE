@@ -1,0 +1,112 @@
+/* ========================================
+   VighnoLearn — Footer
+   ======================================== */
+
+.site-footer {
+  background-color: #120701;
+  padding-top: 0;
+}
+
+.footer-top-divider {
+  height: 1px;
+  background-color: var(--divider);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 64px 0 48px;
+}
+
+/* Footer brand column */
+.footer-brand p {
+  font-size: 0.88rem;
+  color: var(--text-footer-link);
+  line-height: 1.65;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--social-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--orange-primary);
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--text-white);
+}
+
+/* Footer link columns */
+.footer-column h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--text-footer-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column a {
+  font-size: 0.88rem;
+  color: var(--text-footer-link);
+}
+
+.footer-column a:hover {
+  color: var(--orange-primary);
+}
+
+/* Footer bottom bar */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-top: 1px solid var(--divider);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom p {
+  font-size: 0.82rem;
+  color: var(--text-footer-link);
+}
+
+.footer-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-legal a {
+  font-size: 0.82rem;
+  color: var(--text-footer-link);
+}
+
+.footer-legal a:hover {
+  color: var(--orange-primary);
+}

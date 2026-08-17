@@ -1,0 +1,49 @@
+/* ========================================
+   VighnoLearn — Button Styles
+   ======================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius-pill);
+  padding: 12px 28px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(249, 114, 22, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background-color: var(--orange-primary);
+  color: var(--text-white);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--orange-primary);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn-secondary:hover {
+  border-color: var(--orange-primary);
+  box-shadow: 0 6px 20px rgba(249, 114, 22, 0.15);
+}
+
+.btn-cta {
+  background: linear-gradient(90deg, #f97216 0%, #d57c40 60%, #c2703a 100%);
+  color: var(--text-white);
+  font-size: 1rem;
+  padding: 14px 36px;
+}

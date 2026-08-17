@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="VighnoLearn — A student-focused skill development and career platform. Become industry ready through workshops, job-oriented courses, mentorship, hackathons, and real world projects.">
+  <title>VighnoLearn — Become Industry Ready</title>
+
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/visionaries.css">
+  <link rel="stylesheet" href="css/courses.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/cta.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect rx='6' width='32' height='32' fill='%23f97216'/><path d='M8 17l6 6 10-12' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo" id="logo">
+        <img src="images/vsdc-logo.jpeg" alt="VighnoLearn Logo" class="logo-icon">
+        <span><span class="logo-white">Vighno</span><span class="logo-orange">Learn</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- <a href="login.html" class="nav-login" id="login-link">Log In</a> -->
+        <a href="https://div0616.github.io/VSDC_EVENT_PAGE/" class="nav-signup" id="signup-btn">Live-Event</a>
+
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">The Future of Learning</span>
+        <h1>Become <span class="orange">Industry</span> Ready with Skills, Mentorship, and <span class="orange">Real
+            World</span> Experience.</h1>
+        <p class="hero-text">VighnoLearn is a student focused skill development and career platform that helps students
+          become industry ready through workshops, job oriented courses, mentorship, hackathons, and real world
+          projects.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" id="get-started-btn">Get Started</a>
+          <a href="#" class="btn btn-secondary" id="explore-programs-btn">Explore Programs</a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <img src="images/hero_illustration.jpg"
+          alt="Student learning at laptop with floating educational icons — certificate, books, trophy, target, lightbulb, gears, clipboard">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO SHOULD JOIN ===== -->
+  <section class="who-should-join" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>Who Should Join VighnoLearn?</h2>
+        <p>Whether you're a beginner or an aspiring professional, VighnoLearn helps you develop the skills employers
+          value most.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1: Interactive Content -->
+        <div class="feature-card" id="feature-interactive">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="14" height="14" rx="2" />
+              <path d="M7 21h14a2 2 0 002-2V7" />
+            </svg>
+          </div>
+          <h3>Interactive Content</h3>
+          <p>Engage with dynamic quizzes, sandboxed coding environments, and peer-to-peer discussions.</p>
+        </div>
+
+        <!-- Card 2: Expert Instructors -->
+        <div class="feature-card" id="feature-instructors">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="7" r="4" />
+              <path d="M5.5 21a6.5 6.5 0 0113 0" />
+              <path d="M16 3.13a4 4 0 010 7.75" />
+              <path d="M21 21a6.5 6.5 0 00-4-6" />
+            </svg>
+          </div>
+          <h3>Expert Instructors</h3>
+          <p>Learn from senior engineers, designers, and marketers working at Fortune 500 companies.</p>
+        </div>
+
+        <!-- Card 3: Certificates -->
+        <div class="feature-card" id="feature-certificates">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L3 7v6c0 5.25 3.75 10.13 9 11.25 5.25-1.12 9-6 9-11.25V7l-9-5z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <h3>Certificates</h3>
+          <p>Earn industry-recognized credentials to boost your LinkedIn profile and resume credibility.</p>
+        </div>
+
+        <!-- Card 4: Learn at Your Pace -->
+        <div class="feature-card" id="feature-pace">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h3>Learn at Your Pace</h3>
+          <p>Lifetime access to course materials allows you to balance learning with your existing schedule.</p>
+        </div>
+
+        <!-- Card 5: Career Support -->
+        <div class="feature-card" id="feature-career">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+            </svg>
+          </div>
+          <h3>Career Support</h3>
+          <p>Dedicated resume reviews, mock interviews, and access to an exclusive alumni hiring network.</p>
+        </div>
+
+        <!-- Card 6: Cutting-Edge Skills -->
+        <div class="feature-card" id="feature-skills">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3>Cutting-Edge Skills</h3>
+          <p>Curriculum updated monthly to ensure you're learning the tools currently in demand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="container">
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- ===== OUR VISIONARIES ===== -->
+  <!-- <section class="visionaries-section" id="visionaries">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Visionaries</h2>
+        <p>The founding minds shaping the future of VighnoLearn and student empowerment.</p>
+      </div>
+
+      <div class="visionaries-grid"> -->
+  <!-- Visionary 1
+        <div class="visionary-card" id="visionary-1">
+          <img src="images/Ayushi.jpeg" alt="Visionary 1" class="visionary-img">
+          <div class="visionary-overlay">
+            <h3>Ayushi Sharma</h3>
+            <span class="visionary-role">Founder</span>
+          </div>
+        </div> -->
+
+  <!-- Visionary 2 -->
+  <!-- <div class="visionary-card" id="visionary-2">
+          <img src="images/manas-shukla.jpeg" alt="Visionary 2" class="visionary-img">
+          <div class="visionary-overlay">
+            <h3>Placeholder Name</h3>
+            <span class="visionary-role">Co-Founder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Divider -->
+  <div class="container">
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- ===== MEET OUR TEAM ===== -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Meet Our Team</h2>
+        <p>The passionate people behind VighnoLearn who are dedicated to transforming education and empowering students.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card" id="team-member-1">
+          <img src="images/Vishal sir.jpeg" alt="Vishal Pandey" class="team-avatar">
+          <h3>Vishal Pandey</h3>
+          <span class="team-role"></span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+        <!-- Team Member 1 -->
+        <div class="team-card" id="team-member-1">
+          <img src="images/manas-shukla.jpeg" alt="Manas Singh" class="team-avatar">
+          <h3>Manas Singh</h3>
+          <span class="team-role">President</span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card" id="team-member-2">
+          <img src="images/mahima-singh.jpeg" alt="Mahima Singh" class="team-avatar">
+          <h3>Mahima Singh</h3>
+          <span class="team-role">Vice-President</span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-card" id="team-member-3">
+          <img src="images/whatsapp-image-2026-08-09.jpeg" alt="Divyanshu Singh" class="team-avatar">
+          <h3>Divyanshu Singh</h3>
+          <span class="team-role">Secretary</span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-card" id="team-member-4">
+          <img src="images/amiti-naik.jpeg" alt="Amiti Naik" class="team-avatar">
+          <h3>Amiti Naik</h3>
+          <span class="team-role">Head of Marketing</span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="team-card" id="team-member-5">
+          <img src="images/asmi.jpeg" alt="Asmi Patel" class="team-avatar">
+          <h3>Asmi Patel</h3>
+          <span class="team-role">Event Coordinator</span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Team Member 6 -->
+        <div class="team-card" id="team-member-6">
+          <img src="images/asyush-singh.jpeg" alt="Aayush Singh" class="team-avatar">
+          <h3>Aayush Singh</h3>
+          <span class="team-role">PR Head</span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+
+        <!-- Team Member 7 -->
+        <div class="team-card" id="team-member-7">
+          <img src="images/Gyanankur.jpeg" alt="Gyanankur Bharua" class="team-avatar">
+          <h3>Gyanankur Bharua</h3>
+          <span class="team-role">Technical Head</span>
+          <div class="team-socials">
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+              </svg></a>
+            <a href="#" aria-label="Portfolio"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="container">
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- ===== POPULAR COURSES ===== -->
+  <section class="popular-courses" id="courses">
+    <div class="container">
+      <div class="courses-header">
+        <div class="courses-header-text">
+          <h2>Popular Courses</h2>
+          <p>Join thousands of students in our most highly-rated professional paths.</p>
+        </div>
+        <a href="#" class="btn btn-primary" id="view-all-courses-btn">View All Courses</a>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <div class="course-card" id="course-data-analytics">
+          <img src="images/course_data_analytics.jpg" alt="AI in Data Analytics course thumbnail"
+            class="course-thumbnail">
+          <div class="course-body">
+            <div class="course-title-row">
+              <h3>AI in Data Analytics</h3>
+              <span class="course-rating"><span class="star">★</span> 4.9</span>
+            </div>
+            <p class="course-description">Analyze data with AI tools. Discover trends and insights faster.</p>
+            <div class="course-divider"></div>
+            <div class="course-footer">
+              <span class="course-price">₹89.00</span>
+              <a href="#" class="course-enroll">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card" id="course-app-development">
+          <img src="images/course_app_development.jpg" alt="AI in App Development course thumbnail"
+            class="course-thumbnail">
+          <div class="course-body">
+            <div class="course-title-row">
+              <h3>AI in App Development</h3>
+              <span class="course-rating"><span class="star">★</span> 4.9</span>
+            </div>
+            <p class="course-description">Build smarter applications with AI powered features. Create intelligent, and
+              automated user experiences.</p>
+            <div class="course-divider"></div>
+            <div class="course-footer">
+              <span class="course-price">₹89.00</span>
+              <a href="#" class="course-enroll">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card" id="course-data-science">
+          <img src="images/course_data_science.jpg" alt="AI in Data Science course thumbnail" class="course-thumbnail">
+          <div class="course-body">
+            <div class="course-title-row">
+              <h3>AI in Data Science</h3>
+              <span class="course-rating"><span class="star">★</span> 4.9</span>
+            </div>
+            <p class="course-description">Analyze data with AI driven tools and techniques. Build predictive models and
+              uncover actionable insights.</p>
+            <div class="course-divider"></div>
+            <div class="course-footer">
+              <span class="course-price">₹89.00</span>
+              <a href="#" class="course-enroll">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="course-card" id="course-cybersecurity">
+          <img src="images/course_cybersecurity.jpg" alt="AI Based Cybersecurity course thumbnail"
+            class="course-thumbnail">
+          <div class="course-body">
+            <div class="course-title-row">
+              <h3>AI Based Cybersecurity</h3>
+              <span class="course-rating"><span class="star">★</span> 4.9</span>
+            </div>
+            <p class="course-description">Detect threats using AI and strengthen digital security. Learn smart defense
+              strategies and risk prevention.</p>
+            <div class="course-divider"></div>
+            <div class="course-footer">
+              <span class="course-price">₹89.00</span>
+              <a href="#" class="course-enroll">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="course-card" id="course-web-development">
+          <img src="images/course_web_development.jpg" alt="AI Powered Web Development course thumbnail"
+            class="course-thumbnail">
+          <div class="course-body">
+            <div class="course-title-row">
+              <h3>AI Powered Web Development</h3>
+              <span class="course-rating"><span class="star">★</span> 4.9</span>
+            </div>
+            <p class="course-description">Master React, Node.js, and PostgreSQL by building real-world projects.</p>
+            <div class="course-divider"></div>
+            <div class="course-footer">
+              <span class="course-price">₹89.00</span>
+              <a href="#" class="course-enroll">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="course-card" id="course-cloud-computing">
+          <img src="images/course_cloud_computing.jpg" alt="AI in Cloud Computing course thumbnail"
+            class="course-thumbnail">
+          <div class="course-body">
+            <div class="course-title-row">
+              <h3>AI in Cloud Computing</h3>
+              <span class="course-rating"><span class="star">★</span> 4.9</span>
+            </div>
+            <p class="course-description">Leverage AI to optimize cloud infrastructure and services. Build scalable,
+              intelligent, and automated cloud solutions.</p>
+            <div class="course-divider"></div>
+            <div class="course-footer">
+              <span class="course-price">₹89.00</span>
+              <a href="#" class="course-enroll">Enroll Now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="container">
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- ===== CONTACT US ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+        <p>Have a question or want to collaborate? We'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Info Side -->
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:vsdc.vighnolearn@gmail.com">vsdc.vighnolearn@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+917985644260">+91 7985644260</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>Mumbai, Maharashtra, India</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Mon – Fri, 10:00 AM – 5:00 PM IST</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xwleroqr" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required
+                autocomplete="email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="How can we help?">
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="contact-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING CTA ===== -->
+  <section class="closing-cta" id="join">
+    <div class="container">
+      <h2>Ready to <em>Start Building</em>?</h2>
+      <p>Join thousands of students building their future with VighnoLearn.</p>
+      <a href="signup.html" class="btn btn-cta" id="get-membership-btn">Get Free Membership &gt;</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="events">
+    <div class="footer-top-divider"></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/vsdc-logo.jpeg" alt="VighnoLearn Logo" class="logo-icon">
+            <span><span class="logo-white">Vighno</span><span class="logo-orange">Learn</span></span>
+          </a>
+          <p>Empowering students with industry ready skills through practical training, mentorship, internships,
+            hackathons, and real world projects.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="Twitter"><svg viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="17.5" cy="6.5" r="1.5" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Mentorship</a></li>
+            <li><a href="#">Chapters</a></li>
+            <li><a href="#">Skill Labs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Global Hub</a></li>
+            <li><a href="#">Ambassadors</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Impact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentations</a></li>
+            <li><a href="#">Brand Assets</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 VighnoLearn. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Mobile hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+      });
+    });
+
+    // Scroll-based navbar shadow
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.4)';
+      } else {
+        navbar.style.boxShadow = 'none';
+      }
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+    const fadeInObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          fadeInObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .course-card, .team-card, .visionary-card, .contact-info-card, .section-header, .closing-cta h2, .closing-cta p').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      fadeInObserver.observe(el);
+    });
+
+    // Contact form submit via Formspree (AJAX)
+    document.getElementById('contact-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('#contact-submit-btn');
+      const originalText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          btn.textContent = '✓ Message Sent!';
+          btn.style.backgroundColor = '#22c55e';
+          form.reset();
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.backgroundColor = '';
+            btn.disabled = false;
+          }, 3000);
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        btn.textContent = '✗ Failed — Try Again';
+        btn.style.backgroundColor = '#ef4444';
+        btn.disabled = false;
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.backgroundColor = '';
+        }, 3000);
+      }
+    });
+  </script>
+
+</body>
+
+</html>

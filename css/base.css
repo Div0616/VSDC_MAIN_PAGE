@@ -1,0 +1,78 @@
+/* ========================================
+   VighnoLearn — Reset & Base Styles
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-body);
+  background: radial-gradient(ellipse at 75% 20%, #2a1505 0%, #1b0d02 40%, #0e0701 100%);
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Utility --- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--divider);
+}
+
+/* --- Shared Section Header --- */
+.section-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.section-header h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--orange-primary);
+  margin-bottom: 14px;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: var(--text-body-muted);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
